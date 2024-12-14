@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Resume Builder</h1>
+    <form id="resumeForm" class="form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="profilePic">Profile Picture</label>
+        <input type="file" id="profilePic" accept="image/*">
+      </div>
+      <div class="form-group">
+        <label for="education">Education</label>
+        <textarea id="education" rows="3" placeholder="Enter your education details"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="experience">Work Experience</label>
+        <textarea id="experience" rows="3" placeholder="Enter your work experience"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills</label>
+        <textarea id="skills" rows="3" placeholder="Enter your skills (comma or newline separated)"></textarea>
+      </div>
+      <button type="button" id="generate" class="btn">Generate Resume</button>
+    </form>
+    <div id="resumePreview" class="hidden">
+      <div id="resumeContent" class="resume-container"></div>
+      <button id="edit" class="btn">Edit</button>
+      <button id="download" class="btn">Download as PDF</button>
+    </div>
+  </div>
+</body>
+</html>

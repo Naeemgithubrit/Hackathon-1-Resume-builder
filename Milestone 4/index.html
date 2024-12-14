@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Editable Resume Builder</h1>
+
+    <form id="resumeForm">
+      <!-- Personal Information Section -->
+      <section class="personal-info">
+        <h2>Personal Information</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="123-456-7890">
+
+        <label for="github">GitHub Profile (Optional)</label>
+        <input type="url" id="github" placeholder="https://github.com/yourusername">
+
+        <label for="linkedin">LinkedIn Profile (Optional)</label>
+        <input type="url" id="linkedin" placeholder="https://linkedin.com/in/yourusername">
+
+        <label for="profilePicture">Profile Picture</label>
+        <input type="file" id="profilePicture" accept="image/*">
+      </section>
+
+      <!-- Education Section -->
+      <section class="education">
+        <h2>Education</h2>
+        <label for="educationLevel">Education Level</label>
+        <select id="educationLevel" required>
+          <option value="" disabled selected>Select your education level</option>
+          <option value="matric">Matric (High School)</option>
+          <option value="intermediate">Intermediate (College)</option>
+          <option value="university">University</option>
+        </select>
+
+        <div id="matricFields" class="education-fields">
+          <label for="school">School Name</label>
+          <input type="text" id="school" placeholder="School Name">
+
+          <label for="matricYear">Matric Year</label>
+          <input type="number" id="matricYear" placeholder="Year">
+
+          <label for="matricSpecialization">Matric Specialization</label>
+          <input type="text" id="matricSpecialization" placeholder="e.g., Science, Arts">
+        </div>
+
+        <div id="intermediateFields" class="education-fields">
+          <label for="college">College Name</label>
+          <input type="text" id="college" placeholder="College Name">
+
+          <label for="intermediateYear">Intermediate Year</label>
+          <input type="number" id="intermediateYear" placeholder="Year">
+
+          <label for="intermediateSpecialization">Intermediate Specialization</label>
+          <input type="text" id="intermediateSpecialization" placeholder="e.g., Science, Commerce, Arts">
+        </div>
+
+        <div id="universityFields" class="education-fields">
+          <label for="degree">Degree</label>
+          <input type="text" id="degree" placeholder="Degree (e.g., Bachelor's in CS)">
+
+          <label for="university">University Name</label>
+          <input type="text" id="university" placeholder="University Name">
+
+          <label for="gradYear">Graduation Year</label>
+          <input type="number" id="gradYear" placeholder="Year">
+
+          <label for="universitySpecialization">University Specialization</label>
+          <input type="text" id="universitySpecialization" placeholder="e.g., Computer Science">
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section class="work-experience">
+        <h2>Work Experience</h2>
+        <label for="jobTitle">Job Title</label>
+        <input type="text" id="jobTitle" placeholder="e.g., Software Developer" required>
+
+        <label for="company">Company</label>
+        <input type="text" id="company" placeholder="Company Name" required>
+
+        <label for="jobDescription">Job Description</label>
+        <textarea id="jobDescription" placeholder="Describe your job role" required></textarea>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills">
+        <h2>Skills</h2>
+        <label for="skills">Skills</label>
+        <input type="text" id="skills" placeholder="e.g., JavaScript, TypeScript, React" required>
+      </section>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput">
+      <!-- Editable resume content will appear here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

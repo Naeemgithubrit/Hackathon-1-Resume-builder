@@ -1,0 +1,214 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Section Headers */
+h2 {
+  font-size: 1.5rem;
+  color: #555555;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #444444;
+  margin-top: 15px;
+  display: block;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Resume Output Styling */
+#resumeOutput {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+}
+
+/* Form Section Spacing */
+section {
+  margin-bottom: 20px;
+}
+
+/* Dropdown and Other Fields Visibility */
+.education-fields {
+  display: none;
+}
+
+#matricFields.active,
+#intermediateFields.active,
+#universityFields.active,
+#otherEducationFields.active {
+  display: block;
+}
+
+/* Add subtle animations */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea,
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Background and color scheme */
+body {
+  background-color: #f5f5f5;
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Placeholder text color */
+::placeholder {
+  color: #888888;
+  opacity: 0.8;
+}
+
+/* Link styling for optional fields */
+input[type="url"]::placeholder {
+  font-style: italic;
+  color: #888888;
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+  width: 120px;          /* Set a reasonable width */
+  height: 120px;         /* Set a matching height */
+  object-fit: cover;     /* Ensure the image is cropped nicely within the circle */
+  border-radius: 50%;    /* Make it circular */
+  border: 3px solid #333; /* Add a border for a polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin: 0 auto 20px;   /* Center and add space below */
+}
+
+/* Resume Styling */
+.resume {
+  max-width: 600px;      /* Constrain the width of the resume for readability */
+  margin: 0 auto;        /* Center the resume on the page */
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.resume h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.resume p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.resume h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #444;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
